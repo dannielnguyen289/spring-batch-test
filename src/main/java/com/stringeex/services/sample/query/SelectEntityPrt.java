@@ -1,4 +1,4 @@
-package com.stringeex.rest.sample.query;
+package com.stringeex.services.sample.query;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
-package com.stringeex.rest.sample;
+package com.stringeex.services.sample;
 
-import com.stringeex.rest.sample.domain.ListEntityRes;
+import com.stringeex.services.sample.domain.ListEntityRes;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.stringeex.rest.sample.domain;
+package com.stringeex.services.sample.domain;
 
 import com.stringeex.core.pagination.Pagination;
 import lombok.AllArgsConstructor;

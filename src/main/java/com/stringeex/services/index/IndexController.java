@@ -1,7 +1,7 @@
-package com.stringeex.rest.index;
+package com.stringeex.services.index;
 
 import com.stringeex.core.base.BaseController;
-import com.stringeex.rest.index.domain.IndexRes;
+import com.stringeex.services.index.domain.IndexRes;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

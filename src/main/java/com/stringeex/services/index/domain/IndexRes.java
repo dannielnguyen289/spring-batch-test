@@ -1,4 +1,4 @@
-package com.stringeex.rest.index.domain;
+package com.stringeex.services.index.domain;
 
 import lombok.Data;
 import lombok.AllArgsConstructor;

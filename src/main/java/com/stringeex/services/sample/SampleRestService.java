@@ -1,6 +1,6 @@
-package com.stringeex.rest.sample;
+package com.stringeex.services.sample;
 
-import com.stringeex.rest.sample.domain.ListEntityRes;
+import com.stringeex.services.sample.domain.ListEntityRes;
 
 public interface SampleRestService {
     ListEntityRes getList(Long pageNo, Integer pageSize);

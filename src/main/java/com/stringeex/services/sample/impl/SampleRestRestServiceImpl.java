@@ -1,13 +1,13 @@
-package com.stringeex.rest.sample.impl;
+package com.stringeex.services.sample.impl;
 
 import com.stringeex.core.base.BaseService;
 import com.stringeex.core.pagination.Paginator;
-import com.stringeex.rest.sample.SampleRestService;
-import com.stringeex.rest.sample.SampleRestRepository;
-import com.stringeex.rest.sample.domain.Entity;
-import com.stringeex.rest.sample.domain.ListEntityRes;
-import com.stringeex.rest.sample.query.SelectEntityPrt;
-import com.stringeex.rest.sample.query.SelectEntityRss;
+import com.stringeex.services.sample.SampleRestService;
+import com.stringeex.services.sample.SampleRestRepository;
+import com.stringeex.services.sample.domain.Entity;
+import com.stringeex.services.sample.domain.ListEntityRes;
+import com.stringeex.services.sample.query.SelectEntityPrt;
+import com.stringeex.services.sample.query.SelectEntityRss;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
