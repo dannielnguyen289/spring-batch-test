@@ -15,11 +15,10 @@ public class IndexController extends BaseController {
 
     @GetMapping("")
     public IndexRes index() {
-        throw new RuntimeException("Just exception for testing");
-//        IndexRes res = new IndexRes();
-//        res.setCode(200);
-//        res.setMessages("Successfully");
-//        res.setTimestamp(new Date());
-//        return res;
+        IndexRes res = new IndexRes();
+        res.setCode(200);
+        res.setMessages("Successfully");
+        res.setTimestamp(new Date());
+        return res;
     }
 }
