@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Validated
 @RestController
-@RequestMapping(produces = {MediaType.APPLICATION_JSON_VALUE}, consumes = {MediaType.APPLICATION_JSON_VALUE})
 public class BaseController {
 
     protected final Log LOGGER = LogFactory.getLog(getClass());
