@@ -20,6 +20,7 @@ public class SampleTasklet implements Tasklet {
         JobParameters jobParameters = chunkContext.getStepContext().getStepExecution().getJobParameters();
         Long timestamp = jobParameters.getLong(JobParameterName.JOB_TIMESTAMP);
         this.LOGGER.debug(String.format("SAMPLE TASKLET EXECUTE: %d", timestamp));
-        return null;
+//        return RepeatStatus.FINISHED;
+        throw new RuntimeException("Just runtime exception");
     }
 }
