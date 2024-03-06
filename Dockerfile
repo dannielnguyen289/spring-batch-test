@@ -1,5 +1,5 @@
 FROM openjdk:17
 
-ADD ./build/libs/sso-services-1.5.1.jar sso_internal_api.jar
+ADD ./build/libs/sample-0.0.1-SNAPSHOT-plain.jar sample.jar
 
-ENTRYPOINT ["java","-jar","sso_internal_api.jar"]
+ENTRYPOINT ["java","-jar","sample.jar"]
