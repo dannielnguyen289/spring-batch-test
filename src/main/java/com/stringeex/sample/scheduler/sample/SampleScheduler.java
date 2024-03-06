@@ -35,7 +35,7 @@ public class SampleScheduler {
     private Job sampleJob;
 
     @Async
-    @Scheduled(fixedRate = 1000)
+    @Scheduled(initialDelay = 1000, fixedDelay=Long.MAX_VALUE)
     public void consume() throws InterruptedException {
         // Get current java server date time
         Date currentDateTime = new Date();
