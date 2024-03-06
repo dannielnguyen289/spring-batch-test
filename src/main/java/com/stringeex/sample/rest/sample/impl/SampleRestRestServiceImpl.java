@@ -2,8 +2,8 @@ package com.stringeex.sample.rest.sample.impl;
 
 import com.stringeex.sample.core.base.BaseService;
 import com.stringeex.sample.core.pagination.Paginator;
-import com.stringeex.sample.rest.sample.SampleRepository;
-import com.stringeex.sample.rest.sample.SampleService;
+import com.stringeex.sample.rest.sample.SampleRestRepository;
+import com.stringeex.sample.rest.sample.SampleRestService;
 import com.stringeex.sample.rest.sample.domain.Entity;
 import com.stringeex.sample.rest.sample.domain.ListEntityRes;
 import com.stringeex.sample.rest.sample.query.SelectEntityPrt;
@@ -16,10 +16,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class SampleServiceImpl extends BaseService implements SampleService {
+public class SampleRestRestServiceImpl extends BaseService implements SampleRestService {
 
     @Autowired
-    SampleRepository sampleRepository;
+    SampleRestRepository sampleRestRepository;
 
     @Override
     public ListEntityRes getList(Long pageNo, Integer pageSize) {
@@ -36,14 +36,15 @@ public class SampleServiceImpl extends BaseService implements SampleService {
         params.setOffset(paginator.getOffset());
 
         // Count total records
-        Long count = sampleRepository.count(params);
+        Long count = sampleRestRepository.count(params);
+        paginator.setTotalItems(count);
 
         if (count <= 0) {
             listEntityRes.setPagination(paginator.toPagination());
             return listEntityRes;
         }
 
-        List<SelectEntityRss> listResultSet = sampleRepository.list(params);
+        List<SelectEntityRss> listResultSet = sampleRestRepository.list(params);
 
         List<Entity> listEntity = new ArrayList<>();
         for(SelectEntityRss item: listResultSet) {

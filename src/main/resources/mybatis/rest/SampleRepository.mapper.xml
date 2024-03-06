@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.stringeex.sample.rest.sample.SampleRepository">
+<mapper namespace="com.stringeex.sample.rest.sample.SampleRestRepository">
 
     <select id="count"
             parameterType="com.stringeex.sample.rest.sample.query.SelectEntityPrt"
@@ -17,6 +17,9 @@
             NAME            AS NAME,
             DESCRIPTION     AS DESCRIPTION
         FROM SAM_ENTITY
+        <if test="offset != null and limit != null">
+            LIMIT #{offset}, #{limit}
+        </if>
     </select>
 
 </mapper>

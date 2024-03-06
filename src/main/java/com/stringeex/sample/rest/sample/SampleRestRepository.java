@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 @Mapper
-public interface SampleRepository {
+public interface SampleRestRepository {
     Long count(SelectEntityPrt params);
 
     List<SelectEntityRss> list(SelectEntityPrt params);
