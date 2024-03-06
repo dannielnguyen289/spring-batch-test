@@ -1,4 +1,4 @@
-package com.stringeex.sample.module.sample.query;
+package com.stringeex.sample.rest.sample.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class InsertEntityPrt {
+public class Entity {
     Long id;
     String name;
     String description;
