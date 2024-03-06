@@ -21,4 +21,13 @@ public class IndexController extends BaseController {
         res.setTimestamp(new Date());
         return res;
     }
+
+    @GetMapping("health-check")
+    public IndexRes check() {
+        IndexRes res = new IndexRes();
+        res.setCode(200);
+        res.setMessages("Successfully");
+        res.setTimestamp(new Date());
+        return res;
+    }
 }
